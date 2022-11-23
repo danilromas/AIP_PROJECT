@@ -6,7 +6,61 @@
         <title><%= title %></title> 
            <link rel='stylesheet' href='/stylesheets/style.css' />
         </head>
-        <body><h1><%= title %></h1><img src="<%= picture %>" alt=""/>
+        <body>
+            <!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">   
+    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">  
+        <span class="sr-only">Toggle navigation</span> 
+        <span class="icon-bar"></span>     
+        <span class="icon-bar"></span>  
+        <span class="icon-bar"></span>  
+    </button>      
+            <a href="/" class="navbar-brand">Все Все Все ...</a>  
+</div> 
+<!-- Collection of nav links, forms, and other content for toggling --> 
+<div id="navbarCollapse" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">        
+        <li><a href="#">Винни Пух</a></li>  
+        <li><a href="#">Пятачок</a></li>   
+        <li><a href="#">Иа Иа</a></li>
+        <li><a href="#">Кролик</a></li>  
+        <li><a href="#">Сова</a></li>  
+    </ul>   
+    <ul class="nav navbar-nav navbar-right">    
+        <li><a href="#">Войти</a></li> 
+    </ul>   
+</div>
+            </nav>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Главная</a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Обьяснение</a>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">16 типов личности</a>
+            </li>
+        </ul>
+<ul class="navbar-nav navbar-right">
+    <li>
+        <a class="nav-link" href="/logreg">Войти</a>
+    </li>
+</ul>
+    </div>
+</nav>
+
+
+
+            <h1><%= title %></h1><img src="<%= picture %>" alt=""/>
             <h4>Несколько слов о нашем герое: <%=desc%></h4>
-        </body>
-        </html>
+            <nav role="navigation" class="navbar navbar-default"> 
+</body>
+</html>
+            
