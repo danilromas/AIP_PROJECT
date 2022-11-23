@@ -6,11 +6,11 @@ const client = new MongoClient(uri)
 async function run() {
     try {
         await client.connect();
-        var database = client.db("apexlegends");
+        var database = client.db("16characters");
         database.dropDatabase();
-        database = client.db("apexlegends");
-        const legends = database.collection("legends");
-        const result = await legends.insertOne({name:"Рэйф"});
+        database = client.db("16characters");
+        const legends = database.collection("type");
+        const result = await legends.insertMany(data);
         console.log(`${result} documents were inserted`);
     }
     finally {
