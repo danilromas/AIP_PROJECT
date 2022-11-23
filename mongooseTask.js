@@ -1,14 +1,15 @@
 var mongoose = require('mongoose')
 mongoose.connect('mongodb://127.0.0.1:27017/test')
 
-var charr = mongoose.model('charr', {name: String})
+var schema = mongoose.Schema({name: String})
+
+schema.methods.phrase = function() {
+    console.log(this.get("name") + " поздоровалась.")
+}
+
+var charr = mongoose.model('charr', schema)
 var about = new charr({name: 'Посредник'})
-Wraith.save(function(err)
+about.save(function(err)
 {
-    if(err) {
-        console.log(err)
-    }
-    else {
-        console.log('16 типов личностей')
-    }
+    about.phrase()
 })
