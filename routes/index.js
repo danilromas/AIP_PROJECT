@@ -16,28 +16,6 @@ router.get('/characters1', function(req, res, next) {
   res.send("<h1>Персонажи</h1>");
 });
 
-router.get('/index', function(req, res, next) { 
- res.render('index', {
-          title: "Карамелька", 
-          picture: "images/karamelka.jpg",   
-          desc: "проверка"
-        });
-      });
 
-router.get('/about', function(req, res, next) { 
-        res.render('about', {
-                 title: "Здесь инфа об психологии", 
-                 picture: "images/karamelka.jpg",   
-                 desc: "проверка"
-               });
-             });
-             
-router.get('/characters', function(req, res, next) { 
-              res.render('characters16', {
-                       title: "о персонажах психологии", 
-                       picture: "images/karamelka.jpg",   
-                       desc: "проверка"
-                     });
-                   });
 
 module.exports = router;
