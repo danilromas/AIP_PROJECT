@@ -7,6 +7,7 @@ var mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/1_6')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var charRouter = require('./routes/16char');
 
 var app = express();
 
@@ -20,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use('/16char', charRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
