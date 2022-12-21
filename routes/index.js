@@ -15,6 +15,7 @@ router.get('/about1', function(req, res, next) {
 /* GET home page. */
 router.get('/characters1', function(req, res, next) {
   res.send("<h1>Персонажи</h1>");
+  <p>Счетчик: <%= counter %></p>
 });
 
 

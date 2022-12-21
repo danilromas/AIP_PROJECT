@@ -33,6 +33,10 @@ app.use(session (
       saveUninitialized: true
   }
 ))
+app.use(function(req, res, next) {
+  req.session.counter = req.session.counter +1 || 1
+  next()
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -24,6 +24,8 @@ router.get('/:nick', function(req, res, next) {
         title: char.title,
         picture: char.avatar,
         desc: char.desc
+        menu: menu,
+        counter: req.session.counter
       })
     })
 });
