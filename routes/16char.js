@@ -15,7 +15,7 @@ router.get('/:nick', function(req, res, next) {
       })
 });
 
-/* Страница интелекта */
+/* Страница интелекта ////*/
 router.get('/:nick', function(req, res, next) {
   char.findOne({nick:req.params.nick}, function(err, char) {
       if (err) return next(err)
