@@ -17,8 +17,8 @@ coverage
 build/Release
 # Dependency directory
 # https://docs.npmjs.com/cli/shrinkwrap#caveats
-bower_components
 node_modules
+bower_components
 # Debug log from npm
 npm-debug.log
 .DS_Store
