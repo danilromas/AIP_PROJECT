@@ -4,6 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/home_page', function(req, res, next) {
   res.send("<h1>Страница Основная</h1>");
+  res.cookie('greeting', 'Hi!!!').render('index', {}
 });
 
 /* Обьяснение что это такое */
